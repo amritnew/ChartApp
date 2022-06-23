@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		655D26882864606900C23644 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655D26852864604F00C23644 /* Charts.framework */; };
+		655D268A2864710400C23644 /* AppraisalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D26892864710400C23644 /* AppraisalDataModel.swift */; };
+		655D268D2864743800C23644 /* AppraisedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 655D268C2864743800C23644 /* AppraisedData.json */; };
+		655D268F286474A400C23644 /* MockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D268E286474A400C23644 /* MockDataStore.swift */; };
 		65A3C9F528645688006B9AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F428645688006B9AFE /* AppDelegate.swift */; };
 		65A3C9F728645688006B9AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F628645688006B9AFE /* SceneDelegate.swift */; };
 		65A3C9F928645688006B9AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F828645688006B9AFE /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		655D267F2864604F00C23644 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		655D26892864710400C23644 /* AppraisalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppraisalDataModel.swift; sourceTree = "<group>"; };
+		655D268C2864743800C23644 /* AppraisedData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = AppraisedData.json; path = ../../../../../Downloads/AppraisedData.json; sourceTree = "<group>"; };
+		655D268E286474A400C23644 /* MockDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataStore.swift; sourceTree = "<group>"; };
 		65A3C9F128645688006B9AFE /* ChartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C9F428645688006B9AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A3C9F628645688006B9AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		655D268B2864742800C23644 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				655D268C2864743800C23644 /* AppraisedData.json */,
+				655D268E286474A400C23644 /* MockDataStore.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		65A3C9E828645688006B9AFE = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +101,7 @@
 		65A3C9F328645688006B9AFE /* ChartApp */ = {
 			isa = PBXGroup;
 			children = (
-				65A3CA1328645842006B9AFE /* MockData */,
+				655D268B2864742800C23644 /* MockData */,
 				65A3C9F428645688006B9AFE /* AppDelegate.swift */,
 				65A3C9F628645688006B9AFE /* SceneDelegate.swift */,
 				65A3C9F828645688006B9AFE /* ViewController.swift */,
@@ -94,6 +109,7 @@
 				65A3C9FD2864568D006B9AFE /* Assets.xcassets */,
 				65A3C9FF2864568D006B9AFE /* LaunchScreen.storyboard */,
 				65A3CA022864568D006B9AFE /* Info.plist */,
+				655D26892864710400C23644 /* AppraisalDataModel.swift */,
 			);
 			path = ChartApp;
 			sourceTree = "<group>";
@@ -104,13 +120,6 @@
 				655D267F2864604F00C23644 /* Charts.xcodeproj */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		65A3CA1328645842006B9AFE /* MockData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A3CA012864568D006B9AFE /* LaunchScreen.storyboard in Resources */,
+				655D268D2864743800C23644 /* AppraisedData.json in Resources */,
 				65A3C9FE2864568D006B9AFE /* Assets.xcassets in Resources */,
 				65A3C9FC28645688006B9AFE /* Main.storyboard in Resources */,
 			);
@@ -207,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655D268F286474A400C23644 /* MockDataStore.swift in Sources */,
 				65A3C9F928645688006B9AFE /* ViewController.swift in Sources */,
 				65A3C9F528645688006B9AFE /* AppDelegate.swift in Sources */,
 				65A3C9F728645688006B9AFE /* SceneDelegate.swift in Sources */,
+				655D268A2864710400C23644 /* AppraisalDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
