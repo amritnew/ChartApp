@@ -11,6 +11,7 @@
 		655D268A2864710400C23644 /* AppraisalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D26892864710400C23644 /* AppraisalDataModel.swift */; };
 		655D268D2864743800C23644 /* AppraisedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 655D268C2864743800C23644 /* AppraisedData.json */; };
 		655D268F286474A400C23644 /* MockDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D268E286474A400C23644 /* MockDataStore.swift */; };
+		655D26922864D02B00C23644 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 655D26912864D02B00C23644 /* TinyConstraints */; };
 		65A3C9F528645688006B9AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F428645688006B9AFE /* AppDelegate.swift */; };
 		65A3C9F728645688006B9AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F628645688006B9AFE /* SceneDelegate.swift */; };
 		65A3C9F928645688006B9AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F828645688006B9AFE /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				655D26882864606900C23644 /* Charts.framework in Frameworks */,
+				655D26922864D02B00C23644 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +140,9 @@
 			dependencies = (
 			);
 			name = ChartApp;
+			packageProductDependencies = (
+				655D26912864D02B00C23644 /* TinyConstraints */,
+			);
 			productName = ChartApp;
 			productReference = 65A3C9F128645688006B9AFE /* ChartApp.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 65A3C9E828645688006B9AFE;
+			packageReferences = (
+				655D26902864D02B00C23644 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = 65A3C9F228645688006B9AFE /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -439,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		655D26902864D02B00C23644 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		655D26912864D02B00C23644 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 655D26902864D02B00C23644 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65A3C9E928645688006B9AFE /* Project object */;
 }

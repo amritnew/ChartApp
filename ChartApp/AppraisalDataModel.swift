@@ -11,10 +11,12 @@ struct AppraisedData: Decodable {
     private let date: String
     let appraisedValue: Int
     
-    var appraisedDate: Date? {
-        let dateFormatter = ISO8601DateFormatter()
-        dateFormatter.formatOptions = [.withDay, .withMonth]
-        return dateFormatter.date(from: date)
+    var appraisedDate: Int {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let appraisedDate = dateFormatter.date(from: date)!
+        let component = Calendar.current.dateComponents([.day, .month, .year], from: appraisedDate)
+        return component.month!
     }
 }
 
