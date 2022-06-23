@@ -8,12 +8,12 @@
 import Foundation
 
 struct AppraisedData: Decodable {
-    let date: String
+    private let date: String
     let appraisedValue: Int
     
     var appraisedDate: Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSSz"//2015-01-26T07:46:36.611Z
+        let dateFormatter = ISO8601DateFormatter()
+        dateFormatter.formatOptions = [.withDay, .withMonth]
         return dateFormatter.date(from: date)
     }
 }
