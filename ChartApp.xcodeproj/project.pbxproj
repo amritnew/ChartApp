@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655D26882864606900C23644 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655D26852864604F00C23644 /* Charts.framework */; };
 		65A3C9F528645688006B9AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F428645688006B9AFE /* AppDelegate.swift */; };
 		65A3C9F728645688006B9AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F628645688006B9AFE /* SceneDelegate.swift */; };
 		65A3C9F928645688006B9AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C9F828645688006B9AFE /* ViewController.swift */; };
 		65A3C9FC28645688006B9AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A3C9FA28645688006B9AFE /* Main.storyboard */; };
 		65A3C9FE2864568D006B9AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A3C9FD2864568D006B9AFE /* Assets.xcassets */; };
 		65A3CA012864568D006B9AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A3C9FF2864568D006B9AFE /* LaunchScreen.storyboard */; };
-		65A3CA122864581B006B9AFE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A3CA0E286457DD006B9AFE /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		65A3CA0D286457DD006B9AFE /* PBXContainerItemProxy */ = {
+		655D26842864604F00C23644 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 65A3CA08286457DD006B9AFE /* Charts.xcodeproj */;
+			containerPortal = 655D267F2864604F00C23644 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
 			remoteInfo = Charts;
 		};
-		65A3CA0F286457DD006B9AFE /* PBXContainerItemProxy */ = {
+		655D26862864604F00C23644 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 65A3CA08286457DD006B9AFE /* Charts.xcodeproj */;
+			containerPortal = 655D267F2864604F00C23644 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
 			remoteInfo = ChartsTests;
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655D267F2864604F00C23644 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		65A3C9F128645688006B9AFE /* ChartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C9F428645688006B9AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A3C9F628645688006B9AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		65A3C9FD2864568D006B9AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A3CA002864568D006B9AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A3CA022864568D006B9AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65A3CA08286457DD006B9AFE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,13 +50,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A3CA122864581B006B9AFE /* Charts.framework in Frameworks */,
+				655D26882864606900C23644 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655D26802864604F00C23644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				655D26852864604F00C23644 /* Charts.framework */,
+				655D26872864604F00C23644 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		65A3C9E828645688006B9AFE = {
 			isa = PBXGroup;
 			children = (
@@ -85,23 +94,14 @@
 				65A3C9FD2864568D006B9AFE /* Assets.xcassets */,
 				65A3C9FF2864568D006B9AFE /* LaunchScreen.storyboard */,
 				65A3CA022864568D006B9AFE /* Info.plist */,
-				65A3CA08286457DD006B9AFE /* Charts.xcodeproj */,
 			);
 			path = ChartApp;
-			sourceTree = "<group>";
-		};
-		65A3CA09286457DD006B9AFE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				65A3CA0E286457DD006B9AFE /* Charts.framework */,
-				65A3CA10286457DD006B9AFE /* ChartsTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		65A3CA112864581B006B9AFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				655D267F2864604F00C23644 /* Charts.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,8 +161,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 65A3CA09286457DD006B9AFE /* Products */;
-					ProjectRef = 65A3CA08286457DD006B9AFE /* Charts.xcodeproj */;
+					ProductGroup = 655D26802864604F00C23644 /* Products */;
+					ProjectRef = 655D267F2864604F00C23644 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -173,18 +173,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		65A3CA0E286457DD006B9AFE /* Charts.framework */ = {
+		655D26852864604F00C23644 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 65A3CA0D286457DD006B9AFE /* PBXContainerItemProxy */;
+			remoteRef = 655D26842864604F00C23644 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		65A3CA10286457DD006B9AFE /* ChartsTests.xctest */ = {
+		655D26872864604F00C23644 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = 65A3CA0F286457DD006B9AFE /* PBXContainerItemProxy */;
+			remoteRef = 655D26862864604F00C23644 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
